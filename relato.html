@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="background relato">
+    <header class="absolute top-0 left-0 w-full">
+      <div class="flex justify-between items-start p-5">
+        <div class="flex flex-col items-center space-y-1">
+          <a href="/user.html" class="image flex items-center">
+            <img src="img/user.png" alt="" />
+          </a>
+          <p class="text-white">Baianor</p>
+        </div>
+        <a href="/configuracoes.html" class="image flex items-center">
+          <img src="img/config.png" alt="" />
+        </a>
+      </div>
+    </header>
+
+    <div id="consent-dialog" style="display: none">
+      <div class="cookies">
+        <p>Habilita usarmos sua localização?</p>
+        <div class="flex justify-between items-center">
+          <button id="consent-yes">Sim</button>
+          <button id="consent-no">Não</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="content" class="flex flex-col items-center justify-center min-h-screen">
+      <div>
+        <p class="text-white font-bold text-lg pb-4">Localização atual</p>
+      </div>
+
+      <div id="map"></div>
+
+      <div class="enviarRelato">
+        <textarea name="problema" id="" placeholder="Relate um problema"></textarea>
+      </div>
+
+      <div class="flex justify-between flex-col items-center">
+        <a href="envio.html" class="submit">Enviar</a>
+        <a href="localizacao_manual.html" class="submit">Localização Manual</a>
+      </div>
+    </div>
+
+    <script src="js/map.js"></script>
+  </body>
+</html>

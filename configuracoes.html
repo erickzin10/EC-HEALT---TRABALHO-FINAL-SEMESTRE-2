@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="background">
+    <header class="absolute top-0 left-0 w-full">
+      <div class="flex justify-between items-start p-5">
+        <div class="flex flex-col items-center space-y-1">
+          <a href="/user.html" class="image flex items-center">
+            <img src="img/back.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div id="content" class="flex flex-col items-center justify-center min-h-screen">
+      <div class="space-y-5 w-full max-w-[550px]">
+        <p class="text-lg text-white text-center font-bold">Configurações</p>
+
+        <div class="flex items-center justify-center bg-black/40 space-x-4 py-1">
+          <p class="text-white text-base">Notificações</p>
+          <label class="switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+          </label>
+        </div>
+
+        <div class="flex items-center justify-center bg-black/40 space-x-4 py-1">
+          <p class="text-white text-base">Localização Atual</p>
+          <label class="switch" for="checkbox2">
+            <input type="checkbox" id="checkbox2" />
+            <div class="slider round"></div>
+          </label>
+        </div>
+
+        <div class="flex items-center justify-center bg-black/40 space-x-4 py-1">
+          <p class="text-white text-base">Termos e Políticas</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
